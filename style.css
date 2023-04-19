@@ -1,0 +1,283 @@
+body {
+  margin: 0;
+  font-family: "Montserrat", sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+}
+
+/* Sections */
+#header {
+  background-color: #1a5f7a;
+}
+
+/* Containers */
+.container-fluid {
+  padding: 0 10%;
+  display: flex;
+}
+
+/* Navbar */
+
+#navbar {
+  justify-content: space-between;
+  align-items: center;
+}
+
+.brand {
+  font-family: "Ubuntu";
+  font-weight: 700;
+  font-size: 1.5rem;
+  color: white;
+}
+
+.cart {
+  color: white;
+}
+
+/* Carousel */
+
+ul {
+  display: flex;
+  list-style: none;
+  max-width: 1800px;
+  margin-inline: auto;
+  overflow: auto;
+  scroll-snap-type: x mandatory;
+  padding: 0;
+  margin: 0;
+}
+
+li {
+  display: grid;
+  color: white;
+  aspect-ratio: 2/1;
+  height: 450px;
+  width: 100%;
+  flex-shrink: 0;
+  scroll-snap-align: start;
+  align-items: center;
+  text-align: left;
+}
+
+li:nth-child(odd) {
+  background-color: #57c5b6;
+}
+
+li:nth-child(even) {
+  background-color: #576cbc;
+}
+
+.carousel-text {
+  padding: 5% 10% 0 10%;
+}
+
+.carousel-img {
+  width: 25%;
+  float: right;
+  padding: 0 10%;
+}
+
+.phone-desc {
+  width: 50%;
+  font-size: 1.25rem;
+}
+
+.myButton {
+  background-color: #002a5b;
+  border-radius: 10px;
+  display: inline-block;
+  cursor: pointer;
+  color: #ffffff;
+  font-family: Arial;
+  font-size: 18px;
+  padding: 12px 37px;
+  text-decoration: none;
+}
+.myButton:hover {
+  background-color: #1a5f7a;
+}
+.myButton:active {
+  position: relative;
+  top: 1px;
+}
+
+/* Products */
+
+#products {
+  padding: 3% 10%;
+}
+
+.shop-items {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.shop-item {
+  padding: 10px;
+  margin: 20px 0;
+  border: 2px solid #002a5b;
+  border-radius: 5%;
+}
+
+.shop-item-title {
+  text-align: center;
+  font-family: "Ubuntu";
+}
+
+.shop-item-image {
+  height: 250px;
+  border-radius: 5%;
+}
+
+.shop-item-details {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 5px;
+}
+
+.shop-item-price,
+.item-price {
+  font-family: "Ubuntu";
+  font-size: 20px;
+  /* flex-grow: 1; */
+  color: #333;
+}
+
+.cart-button {
+  background-color: #002a5b;
+  border-radius: 10px;
+  display: inline-block;
+  cursor: pointer;
+  color: #ffffff;
+  font-family: Arial;
+  font-size: 16px;
+  padding: 10px 25px;
+  text-decoration: none;
+}
+
+.cart-button:hover {
+  background-color: #57c5b6;
+}
+.cart-button:active {
+  position: relative;
+  top: 1px;
+}
+
+/* Footer */
+#footer {
+  background-color: #1a5f7a;
+  color: white;
+  padding: 1.5rem;
+  text-align: center;
+}
+
+.social-icon {
+  margin: 10px 10px;
+}
+
+.penghalang {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgb(0, 0, 0);
+  background-color: rgba(0, 0, 0, 0.4);
+}
+
+/*Modal */
+.modal-content {
+  background-color: #fefefe;
+  margin: 15% auto;
+  padding: 40px;
+  border: 1px solid #888;
+  width: 50%;
+  color: black;
+}
+
+/*Tombol X*/
+#tutup {
+  color: #aaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+#tutup:hover,
+#tutup:focus {
+  color: black;
+  cursor: pointer;
+}
+
+.item-info > img {
+  width: 5rem;
+  float: left;
+  margin-right: 20px;
+}
+
+.item-info {
+  font-family: "Ubuntu";
+}
+
+.remove-button {
+  background-color: #002a5b;
+  border-radius: 10px;
+  display: inline-block;
+  cursor: pointer;
+  color: #ffffff;
+  font-family: Arial;
+  font-size: 16px;
+  padding: 8px 20px;
+  margin-left: 20px;
+  text-decoration: none;
+}
+
+.remove-button :hover {
+  background-color: #57c5b6;
+}
+.remove-button :active {
+  position: relative;
+  top: 1px;
+}
+
+.cart-item {
+  display: block;
+  padding: 1rem;
+  margin: 10px 10px;
+  border: 1px solid #002a5b;
+}
+
+.total-price {
+  text-align: center;
+}
+
+.checkout-button {
+  background-color: #002a5b;
+  border-radius: 10px;
+  display: inline-block;
+  cursor: pointer;
+  color: #ffffff;
+  font-family: Arial;
+  font-size: 16px;
+  padding: 10px 25px;
+  text-decoration: none;
+}
+
+.checkout-button :hover {
+  background-color: #57c5b6;
+}
+.checkout-button :active {
+  position: relative;
+  top: 1px;
+}

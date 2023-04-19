@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="favicon.ico" />
+
+    <!-- External CSS -->
+    <link rel="stylesheet" href="style.css" />
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat&family=Ubuntu&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700;800;900&display=swap"
+      rel="stylesheet"
+    />
+
+    <title>iBuy</title>
+  </head>
+  <body>
+    <!-- Nav Bar -->
+    <section id="header">
+      <div class="container-fluid" id="navbar">
+        <div class="brand">
+          <h1>iBuy</h1>
+        </div>
+        <div class="cart">
+          <button id="tombolku">
+            <i class="fa-solid fa-cart-shopping"></i>
+          </button>
+          <div id="myModal" class="penghalang">
+            <div class="modal-content">
+              <span id="tutup">&times;</span>
+              <div class="cart-items">
+                <!-- render cart items here -->
+              </div>
+              <div class="total-price">
+                <!-- render sub total here -->
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <div class="carousel">
+      <ul>
+        <li>
+          <div class="slider">
+            <img
+              class="carousel-img"
+              src="images/carousel_img/iphones.png"
+              alt="iphone-img"
+            />
+            <div class="carousel-text">
+              <h1>Newest Iphones</h1>
+              <p class="phone-desc">
+                Lorem ipsum dolor sit amet, quis in duis, iaculis id felis.
+                Consectetuer vestibulum, nunc urna lectus, erat ligula.
+                Hendrerit nam, lectus ante, ut lorem eros.
+              </p>
+              <a href="#" class="myButton">see more</a>
+            </div>
+          </div>
+        </li>
+        <li>
+          <div class="slider">
+            <img
+              class="carousel-img"
+              src="images/carousel_img/pixel.png"
+              alt="pixel-img"
+            />
+            <div class="carousel-text">
+              <h1>Join The Pixel Family</h1>
+              <p class="phone-desc">
+                Lorem ipsum dolor sit amet, quis in duis, iaculis id felis.
+                Consectetuer vestibulum, nunc urna lectus, erat ligula.
+                Hendrerit nam, lectus ante, ut lorem eros.
+              </p>
+              <a href="#" class="myButton">see more</a>
+            </div>
+          </div>
+        </li>
+        <li>
+          <div class="slider">
+            <img
+              class="carousel-img"
+              src="images/carousel_img/s21plus.png"
+              alt="s21plus-img"
+            />
+            <div class="carousel-text">
+              <h1>Samsung Galaxy S Series</h1>
+              <p class="phone-desc">
+                Lorem ipsum dolor sit amet, quis in duis, iaculis id felis.
+                Consectetuer vestibulum, nunc urna lectus, erat ligula.
+                Hendrerit nam, lectus ante, ut lorem eros.
+              </p>
+              <a href="#" class="myButton">see more</a>
+            </div>
+          </div>
+        </li>
+      </ul>
+    </div>
+
+    <!-- Products -->
+    <section id="products">
+      <div class="shop-items">
+        <!-- <div class="shop-item">
+          <img class="shop-item-image" src="images/product_img/xiaomi1.jpg" />
+          <h3 class="shop-item-title">Xiaomi 11 Ultra</h3>
+          <div class="shop-item-details">
+            <span class="shop-item-price">$999</span>
+            <button class="cart-button" type="button">add to cart</button>
+          </div>
+        </div> -->
+      </div>
+    </section>
+
+    <!-- Footer -->
+
+    <section id="footer">
+      <i class="social-icon fa-brands fa-facebook"> </i>
+      <i class="social-icon fa-brands fa-instagram"></i>
+      <i class="social-icon fa-brands fa-twitter"></i>
+      <i class="social-icon fa-solid fa-envelope"></i>
+      <p class="copyright">© Copyright iBuy Assessment</p>
+    </section>
+
+    <script src="product.js"></script>
+    <script src="app.js"></script>
+    <script
+      src="https://kit.fontawesome.com/e7a0f10d76.js"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
