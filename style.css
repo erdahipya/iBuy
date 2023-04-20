@@ -3,14 +3,6 @@ body {
   font-family: "Montserrat", sans-serif;
 }
 
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-}
-
 /* Sections */
 #header {
   background-color: #1a5f7a;
@@ -74,7 +66,7 @@ li:nth-child(even) {
 }
 
 .carousel-text {
-  padding: 5% 10% 0 10%;
+  padding: 5% 10% 5% 10%;
 }
 
 .carousel-img {
@@ -86,6 +78,7 @@ li:nth-child(even) {
 .phone-desc {
   width: 50%;
   font-size: 1.25rem;
+  line-height: 1.75rem;
 }
 
 .myButton {
@@ -183,7 +176,7 @@ li:nth-child(even) {
   margin: 10px 10px;
 }
 
-.penghalang {
+.modal-background {
   display: none;
   position: fixed;
   z-index: 1;
@@ -200,22 +193,24 @@ li:nth-child(even) {
 .modal-content {
   background-color: #fefefe;
   margin: 15% auto;
-  padding: 40px;
+  padding: 40px 40px;
   border: 1px solid #888;
   width: 50%;
   color: black;
 }
 
-/*Tombol X*/
-#tutup {
+/* Close Button*/
+#close-button {
   color: #aaa;
-  float: right;
+  position: absolute;
+  right: 24%;
   font-size: 28px;
   font-weight: bold;
+  margin-bottom: 20px;
 }
 
-#tutup:hover,
-#tutup:focus {
+#close-button:hover,
+#close-button:focus {
   color: black;
   cursor: pointer;
 }
@@ -243,14 +238,6 @@ li:nth-child(even) {
   text-decoration: none;
 }
 
-.remove-button :hover {
-  background-color: #57c5b6;
-}
-.remove-button :active {
-  position: relative;
-  top: 1px;
-}
-
 .cart-item {
   display: block;
   padding: 1rem;
@@ -274,10 +261,19 @@ li:nth-child(even) {
   text-decoration: none;
 }
 
-.checkout-button :hover {
-  background-color: #57c5b6;
-}
-.checkout-button :active {
-  position: relative;
-  top: 1px;
+/* Responsive */
+
+@media (max-width: 1028px) {
+  .carousel img {
+    display: none;
+  }
+
+  .carousel-text {
+    text-align: center;
+  }
+
+  .phone-desc {
+    margin: 20px auto;
+    line-height: 1.75rem;
+  }
 }

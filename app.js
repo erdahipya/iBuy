@@ -1,6 +1,6 @@
 var modal = document.getElementById("myModal");
-var btn = document.getElementById("tombolku");
-var span = document.getElementById("tutup");
+var btn = document.getElementById("cart-button");
+var span = document.getElementById("close-button");
 
 btn.onclick = function () {
   modal.style.display = "block";
